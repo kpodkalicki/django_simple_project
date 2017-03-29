@@ -23,3 +23,7 @@ python manage.py migrate
 ```
 
 7. Dodanie modelu __Note__ do panelu admnistratora
+
+8. ListView na podstawie [http://misztal.edu.pl/logs/listview-w-django/](http://misztal.edu.pl/logs/listview-w-django/)
+
+9. 
