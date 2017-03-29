@@ -26,4 +26,4 @@ python manage.py migrate
 
 8. ListView na podstawie [http://misztal.edu.pl/logs/listview-w-django/](http://misztal.edu.pl/logs/listview-w-django/)
 
-9. 
+9. DetailView na podstawie [http://misztal.edu.pl/logs/detailview-w-django/](http://misztal.edu.pl/logs/detailview-w-django/)
