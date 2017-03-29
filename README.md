@@ -14,5 +14,4 @@ python runserver
 ```bash
 python manage.py startapp notes
 ```
-5. 
-6.
+5. Instalacja aplikacji __notes__ 
