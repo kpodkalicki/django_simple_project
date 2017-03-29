@@ -10,7 +10,7 @@ python manage.py createsuperuser
 ```bash
 python runserver 
 ```
-4. Utworzenie apliacji __notes__
+4. Utworzenie aplikacji __notes__
 ```bash
 python manage.py startapp notes
 ```
