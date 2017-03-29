@@ -16,10 +16,10 @@ python manage.py startapp notes
 ```
 5. Instalacja aplikacji __notes__ 
 
-6. Model Note oraz migracja bazy danych
+6. Model __Note__ oraz migracja bazy danych
 ```bash
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-6.
+7. Dodanie modelu __Note__ do panelu admnistratora
