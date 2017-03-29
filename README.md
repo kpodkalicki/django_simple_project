@@ -27,3 +27,7 @@ python manage.py migrate
 8. ListView na podstawie [http://misztal.edu.pl/logs/listview-w-django/](http://misztal.edu.pl/logs/listview-w-django/)
 
 9. DetailView na podstawie [http://misztal.edu.pl/logs/detailview-w-django/](http://misztal.edu.pl/logs/detailview-w-django/)
+
+10. Korzystając z [https://docs.djangoproject.com/en/1.10/topics/class-based-views/generic-editing/](https://docs.djangoproject.com/en/1.10/topics/class-based-views/generic-editing/) przygotuj odpowiednie widoki umożliwiające dodawanie, aktualizację i usuwanie notatek.
+ 
+11.
