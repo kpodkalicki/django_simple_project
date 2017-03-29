@@ -30,4 +30,6 @@ python manage.py migrate
 
 10. Korzystając z [https://docs.djangoproject.com/en/1.10/topics/class-based-views/generic-editing/](https://docs.djangoproject.com/en/1.10/topics/class-based-views/generic-editing/) przygotuj odpowiednie widoki umożliwiające dodawanie, aktualizację i usuwanie notatek.
  
-11. [Dodaj użytkownika](https://docs.djangoproject.com/en/1.10/topics/class-based-views/generic-editing/#models-and-request-user) - autora notatki - do modelu __Note__. Pamietaj o [migracji bazy danych](https://docs.djangoproject.com/en/1.10/topics/migrations/). 
+11. [Dodaj użytkownika](https://docs.djangoproject.com/en/1.10/topics/class-based-views/generic-editing/#models-and-request-user) - autora notatki - do modelu __Note__. Pamietaj o [migracji bazy danych](https://docs.djangoproject.com/en/1.10/topics/migrations/).
+ 
+12. Zatroszcz się, aby tylko [zalogowany użytkownik](https://docs.djangoproject.com/en/1.10/topics/auth/default/#django.contrib.auth.decorators.login_required) mógł dodawać notatki. Zapewnij aby w momencie tworzenia notatki użytkowniek wypełniany był [automatycznie](https://docs.djangoproject.com/en/1.10/topics/class-based-views/generic-editing/#models-and-request-user).
