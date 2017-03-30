@@ -43,3 +43,5 @@ python manage.py migrate
 16. Zmień model __Note__ tak aby dziedziczył po TimeStampedModel  z aplikacji [django-extensions](https://github.com/django-extensions/django-extensions). Pamietaj o migracji bazy danych.
  
 17. Utwórz drzewiastą zależność dla tematów wykorzystujac aplikację [django-mptt](https://github.com/django-mptt/django-mptt) (dodatkowo zainstaluj również [django-mptt-admin](https://github.com/mbraak/django-mptt-admin)). Zobacz jak to działa w panelu administratora.
+
+18. Dodaj pole public do modelu Topic. Zadbaj o to, aby była możliwość edycji pola public z poziomu listy w panelu administratora wykorzystując [list_editable](https://docs.djangoproject.com/en/1.10/ref/contrib/admin/#django.contrib.admin.ModelAdmin.list_editable) w modelu administratora. Uwaga: Aby to zobaczyc trzeba przejść do 'Grid view'.
