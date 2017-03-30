@@ -38,4 +38,6 @@ python manage.py migrate
 
 14. Wykorzystując klasę bazową [UserPassesTestMixin](https://docs.djangoproject.com/en/1.10/topics/auth/default/#django.contrib.auth.mixins.UserPassesTestMixin) zadbaj o to, aby tylko twórca mógł aktualizować notatkę oraz aby admin i twórca mogli je usuwać.
 
-15. Utwórz model Topic, który będzie reprezentował temat notatek. Wykorzystaj modele bazowe TitleSlugDescriptionModel oraz TimeStampedModel  z aplikacji [django-extensions](https://github.com/django-extensions/django-extensions), którą musisz zainstalować.
+15. Utwórz model __Topic__, który będzie reprezentował temat notatek. Wykorzystaj modele bazowe TitleSlugDescriptionModel oraz TimeStampedModel  z aplikacji [django-extensions](https://github.com/django-extensions/django-extensions), którą musisz zainstalować.
+
+16. Zmień model __Note__ tak aby dziedziczył po TimeStampedModel  z aplikacji [django-extensions](https://github.com/django-extensions/django-extensions). Pamietaj o migracji bazy danych. 

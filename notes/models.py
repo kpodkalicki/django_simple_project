@@ -6,7 +6,7 @@ from django.urls import reverse
 from django_extensions.db.models import TimeStampedModel, TitleSlugDescriptionModel
 
 
-class Note(models.Model):
+class Note(TimeStampedModel):
     title = models.CharField(max_length=256)
     body = models.TextField()
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
