@@ -40,4 +40,6 @@ python manage.py migrate
 
 15. Utwórz model __Topic__, który będzie reprezentował temat notatek. Wykorzystaj modele bazowe TitleSlugDescriptionModel oraz TimeStampedModel  z aplikacji [django-extensions](https://github.com/django-extensions/django-extensions), którą musisz zainstalować.
 
-16. Zmień model __Note__ tak aby dziedziczył po TimeStampedModel  z aplikacji [django-extensions](https://github.com/django-extensions/django-extensions). Pamietaj o migracji bazy danych. 
+16. Zmień model __Note__ tak aby dziedziczył po TimeStampedModel  z aplikacji [django-extensions](https://github.com/django-extensions/django-extensions). Pamietaj o migracji bazy danych.
+ 
+17. Utwórz drzewiastą zależność dla tematów wykorzystujac aplikację [django-mptt](https://github.com/django-mptt/django-mptt) (dodatkowo zainstaluj również [django-mptt-admin](https://github.com/mbraak/django-mptt-admin)). Zobacz jak to działa w panelu administratora.
