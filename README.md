@@ -37,3 +37,5 @@ python manage.py migrate
 13. Korzystają z [Managing static files (e.g. images, JavaScript, CSS)](https://docs.djangoproject.com/en/1.10/howto/static-files/) dodaj do projektu jego ostylowanie.
 
 14. Wykorzystując klasę bazową [UserPassesTestMixin](https://docs.djangoproject.com/en/1.10/topics/auth/default/#django.contrib.auth.mixins.UserPassesTestMixin) zadbaj o to, aby tylko twórca mógł aktualizować notatkę oraz aby admin i twórca mogli je usuwać.
+
+15. Utwórz model Topic, który będzie reprezentował temat notatek. Wykorzystaj modele bazowe TitleSlugDescriptionModel oraz TimeStampedModel  z aplikacji [django-extensions](https://github.com/django-extensions/django-extensions), którą musisz zainstalować.
