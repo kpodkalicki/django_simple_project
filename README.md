@@ -35,3 +35,5 @@ python manage.py migrate
 12. Zatroszcz się, aby tylko [zalogowany użytkownik](https://docs.djangoproject.com/en/1.10/topics/auth/default/#django.contrib.auth.decorators.login_required) mógł dodawać notatki. Zapewnij aby w momencie tworzenia notatki użytkowniek wypełniany był [automatycznie](https://docs.djangoproject.com/en/1.10/topics/class-based-views/generic-editing/#models-and-request-user).
 
 13. Korzystają z [Managing static files (e.g. images, JavaScript, CSS)](https://docs.djangoproject.com/en/1.10/howto/static-files/) dodaj do projektu jego ostylowanie.
+
+14. Wykorzystując klasę bazową [UserPassesTestMixin](https://docs.djangoproject.com/en/1.10/topics/auth/default/#django.contrib.auth.mixins.UserPassesTestMixin) zadbaj o to, aby tylko twórca mógł aktualizować notatkę oraz aby admin i twórca mogli je usuwać.
