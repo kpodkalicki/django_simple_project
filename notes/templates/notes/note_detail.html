@@ -1,9 +1,19 @@
-<h1>{{ note.title }}</h1>
-<h4>Created by: {{ note.created_by }}</h4>
-<p>{{ note.body }}</p>
+{% extends "base.html" %}
 
-<a href="{% url "note-update" note.pk %}">Update</a> |
+{% block content %}
+    <h1>{{ note.title }}</h1>
+    <h4>Created by: {{ note.created_by }}</h4>
+    <div class="well well-lg">{{ note.body }}</div>
+{% endblock %}
 
-<a href="{% url "note-delete" note.pk %}">Delete</a> |
-
-<a href="{% url "note-list" %}">Back to list</a>
+{% block side_menu %}
+    <li>
+        <a href="{% url "note-update" note.pk %}">Update</a>
+    </li>
+    <li>
+        <a href="{% url "note-delete" note.pk %}">Delete</a>
+    </li>
+    <li>
+        <a href="{% url "note-list" %}">Back to list</a>
+    </li>
+{% endblock %}
