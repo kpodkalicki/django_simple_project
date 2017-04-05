@@ -44,4 +44,6 @@ python manage.py migrate
  
 17. Utwórz drzewiastą zależność dla tematów wykorzystujac aplikację [django-mptt](https://github.com/django-mptt/django-mptt) (dodatkowo zainstaluj również [django-mptt-admin](https://github.com/mbraak/django-mptt-admin)). Zobacz jak to działa w panelu administratora.
 
-18. Dodaj pole public do modelu Topic. Zadbaj o to, aby była możliwość edycji pola public z poziomu listy w panelu administratora wykorzystując [list_editable](https://docs.djangoproject.com/en/1.10/ref/contrib/admin/#django.contrib.admin.ModelAdmin.list_editable) w modelu administratora. Uwaga: Aby to zobaczyc trzeba przejść do 'Grid view'.
+18. Dodaj pole _public_ do modelu Topic. Zadbaj o to, aby była możliwość edycji pola public z poziomu listy w panelu administratora wykorzystując [list_editable](https://docs.djangoproject.com/en/1.10/ref/contrib/admin/#django.contrib.admin.ModelAdmin.list_editable) w modelu administratora. Uwaga: Aby to zobaczyc trzeba przejść do 'Grid view'.
+
+19. Przenieś model Topic do nowej aplikacji. Dodaj widoki listy, szczegółowy, tworzenia, aktualizacji i usuwania dla modelu Topic. W wydoku szczegółowym wyświetl notaki podpięte do aktualnego tematu. Popraw działanie aplikacji tak, aby możliwie było automatyczne wypełnianie odpowiedniego tematu przy tworzeniu notatki.

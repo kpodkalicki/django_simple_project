@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ topic.title }}</h1>
+    <h4>Created by: {{ topic.created_by }}</h4>
+
+    <hr>
+
+    {% for note in notes %}
+        <a href="{% url 'note-detail' note.pk %}">{{ note.title }}</a>
+    {% empty %}
+        No notes yet.
+    {% endfor %}
+{% endblock %}
+
+{% block side_menu %}
+    <li>
+        <a href="{% url "topic-update" topic.pk %}">Update</a>
+    </li>
+    <li>
+        <a href="{% url "topic-delete" topic.pk %}">Delete</a>
+    </li>
+    <li>
+        <a href="{% url "topic-list" %}">Back to list</a>
+    </li>
+{% endblock %}

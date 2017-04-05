@@ -40,3 +40,5 @@ class NoteDelete(UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         return self.request.is_superuser or self.request.user == self.object.created_by
+
+
