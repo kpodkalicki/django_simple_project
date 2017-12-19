@@ -19,7 +19,7 @@ class NoteDetailView(DetailView):
 
 class NoteCreate(LoginRequiredMixin, CreateView):
     model = Note
-    fields = ['title', 'body']
+    fields = ['topic', 'title', 'body']
 
     def form_valid(self, form):
         form.instance.created_by = self.request.user
